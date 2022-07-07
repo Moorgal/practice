@@ -126,7 +126,7 @@ other variables
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
   --max-width: 1170px;
-  --fix-width: 600px;
+  --fix-width: 800px;
 
   /* box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -215,25 +215,69 @@ Color Flipper
 .nav {
   box-shadow: var(--shadow-2);
   background: var(--white);
+  height: 4rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-center {
+  width: 90vw;
+  max-width: var(--fix-width);
   display: flex;
-  justify-content: space-around;
   align-items: center;
-}
-h4 {
-  margin: 0;
-  color: var(--primary-500);
-  font-size: 700;
-}
-.nav-links {
-  text-transform: capitalize;
-
-  width: 100px;
-  display: flex;
   justify-content: space-between;
 }
+.nav-center h4 {
+  margin: 0;
+  color: var(--primary-500);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.nav-links {
+  display: flex;
+}
+.nav a {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: var(--primary-900);
+  letter-spacing: var(--letterSpacing);
+  margin-right: 1rem;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.nav a:hover {
+  color: var(--primary-500);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 4rem);
+}
 .container {
-  margin: 0 auto;
+  text-align: center;
+}
+
+.container h2 {
+  background: var(--primary-800);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: var(--borderRadius);
+  -webkit-border-radius: var(--borderRadius);
+  -moz-border-radius: var(--borderRadius);
+  -ms-border-radius: var(--borderRadius);
+  -o-border-radius: var(--borderRadius);
+  letter-spacing: 5px;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+.color {
+  color: var(--primary-500);
+  text-transform: uppercase;
+}
+.btn-hero {
 }
