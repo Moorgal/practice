@@ -212,32 +212,34 @@ other variables
 /* ============================================================================================= 
 Counter
 ============================================================================================= */
-.center {
+main {
   display: grid;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
+  place-items: center;
+  min-height: 100vh;
 }
-.section-center {
-  width: var(--fix-width);
-  display: grid;
-  justify-items: center;
+.container {
+  text-align: center;
 }
-.section-center h2 {
-  font-weight: bold;
-  letter-spacing: var(--letterSpacing);
+.container h1 {
+  font-weight: 600;
+  font-size: 4rem;
   margin-bottom: 0;
 }
-.section-center h1 {
-  font-size: 400%;
+
+#value {
+  font-size: 7rem;
   font-weight: bold;
-  margin-bottom: 0;
+  line-height: 1.25;
 }
-.counter-buttons {
-}
-.btn-counter {
+
+.counter-btn {
   background: transparent;
-  color: var(--primary-500);
-  border: 1px solid var(--primary-500);
-  box-shadow: var(--shadow-1);
+  text-transform: uppercase;
+  color: var(--textColor);
+  border: 2px solid var(--textColor);
+  margin: 0.5rem;
+}
+.counter-btn:hover {
+  background: var(--textColor);
+  color: var(--white);
 }
